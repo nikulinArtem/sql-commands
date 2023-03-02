@@ -226,7 +226,9 @@
 	  > Чтобы определить условия для значений, рассчитываемых через функцию  
 	  агрегирования, вместо WHERE применяется ключевое слово HAVING:  
 	  ```
-	  SELECT 'column_1', MIN ('column_2') AS 'min_column_2' FROM 'table_name' GROUP BY 'column_1' HAVING 'min_column_2' < 'value';
+	  SELECT 'column_1', MIN ('column_2') AS 'min_column_2' 
+	  FROM 'table_name' 
+	  GROUP BY 'column_1' HAVING 'min_column_2' < 'value';
 	  ```  
 
 - ### Вложенные запросы и объединение UNION  
