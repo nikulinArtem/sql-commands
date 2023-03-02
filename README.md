@@ -32,7 +32,9 @@
 	  VALUES ('value_1', 'value_2', 'value_3', 'value_n');
 	  ```  
 	- Вставка одной строки  
-	  `INSERT INTO 'table_name' ('id', 'name', 'column_name') VALUES (1, 'value_1', 'value_2');`  
+	  ```
+	  INSERT INTO 'table_name' ('id', 'name', 'column_name') VALUES (1, 'value_1', 'value_2');
+	  ```  
 	    
 	  > Если мы вставляем данные во все столбцы таблицы, то в команде INSERT  
 	  имена столбцов не перечисляются:  
