@@ -2,7 +2,9 @@
 
 - ### Определение данных, базовые операции с данными:  
 	- Изменение имени таблицы  
-	  ```ALTER TABLE 'table_name' RENAME TO 'new_name' ;```  
+	  ```
+	  ALTER TABLE 'table_name' RENAME TO 'new_name' ;
+	  ```  
 	- Изменение имени столбца  
 	  `ALTER TABLE  'table_name' RENAME COLUMN 'column_name' TO 'new_column_name';`  
 	- Добавление столбца в таблицу  
