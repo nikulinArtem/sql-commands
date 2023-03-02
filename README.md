@@ -28,7 +28,8 @@
 	  ```  
 	- Добавление новых данных в таблицу  
 	  ```
-	  INSERT INTO 'table_name' ('column_1', 'column_2', 'colum_3', 'column_n') VALUES ('value_1', 'value_2', 'value_3', 'value_n');
+	  INSERT INTO 'table_name' ('column_1', 'column_2', 'colum_3', 'column_n') 
+	  VALUES ('value_1', 'value_2', 'value_3', 'value_n');
 	  ```  
 	- Вставка одной строки  
 	  `INSERT INTO 'table_name' ('id', 'name', 'column_name') VALUES (1, 'value_1', 'value_2');`  
@@ -251,7 +252,9 @@
 	  использованием UNION выглядит следующим образом:  
 
 	  ```
-	  SELECT 'Столбец 1', 'Столбец 2' FROM 'Таблица WHERE  'Условие' UNION SELECT 'Столбец 1',  'Столбец 2' FROM 'Таблица' WHERE 'Условие';
+	  SELECT 'Столбец 1', 'Столбец 2' FROM 'Таблица WHERE  'Условие' 
+	  UNION 
+	  SELECT 'Столбец 1',  'Столбец 2' FROM 'Таблица' WHERE 'Условие';
 	  ```  
 - ### Объединение таблиц через JOIN  
 	- Перекрёстное объединение (CROSS JOIN)  
