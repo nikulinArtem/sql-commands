@@ -2,7 +2,7 @@
 
 - ### Определение данных, базовые операции с данными:  
 	- Изменение имени таблицы  
-	  `ALTER TABLE 'table_name' RENAME TO 'new_name' ;`  
+	  ```ALTER TABLE 'table_name' RENAME TO 'new_name' ;```  
 	- Изменение имени столбца  
 	  `ALTER TABLE  'table_name' RENAME COLUMN 'column_name' TO 'new_column_name';`  
 	- Добавление столбца в таблицу  
@@ -198,23 +198,23 @@
 	  `CREATE TEMPORARY TABLE 'table_name' ( ... );`  
 	- Транзакции  
 	  ```
-	  		  BEGIN TRANSACTION;
-	  		  	Операция 1;
-	  		  	Операция 2;
-	  		  	...
-	  		  	Операция N;
-	  		  COMMIT;
+	  BEGIN TRANSACTION;
+		Операция 1;
+		Операция 2;
+		...
+		Операция N;
+	  COMMIT;
 	  ```
 	- Триггеры  
 	    
 	  > Триггеры рассматриваются как задачи, которые выполняются автоматически при наступлении конкретного события — вставки строки, обновлении данных, удалении строки.  
 
 	  ```
-	  		  CREATE TRIGGER 'Имя триггера' [BEFORE|AFTER] 'Событие'
-	  		  ON 'Таблица'
-	  		  BEGIN
-	  		  	-- Действия ....
-	  		  END;
+	  CREATE TRIGGER 'Имя триггера' [BEFORE|AFTER] 'Событие'
+	  ON 'Таблица'
+	  BEGIN
+		-- Действия ....
+	  END;
 	  ```
 	- Создание индексов  
 	  `CREATE INDEX 'Имя индекса' ON 'Имя таблицы'('Имена столбцов');`
