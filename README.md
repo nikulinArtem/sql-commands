@@ -52,7 +52,8 @@
 
 	- Вставка нескольких строк  
 	  ```
-	  INSERT INTO 'table_name' ('column_1', 'column_2') VALUES ('value_1', 'value_2'), ('value_3', 'value_4');
+	  INSERT INTO 'table_name' ('column_1', 'column_2') 
+	  VALUES ('value_1', 'value_2'), ('value_3', 'value_4');
 	  ```  
 	- Обновление существующих данных  
 	  ```
@@ -106,25 +107,29 @@
 	  ```  
 	- Поиск по диапазону значений  
 	  ```
-	  SELECT 'column_1', 'column_2' FROM 'table_name' WHERE 'column_1' BETWEEN 'value_1' AND 'value_2';
+	  SELECT 'column_1', 'column_2' FROM 'table_name' 
+	  WHERE 'column_1' BETWEEN 'value_1' AND 'value_2';
 	  ```  
 	- Поиск по списку значений  
 	    
 	  > Со списками значений удобно работать с ключевым словом IN, для которого в скобках мы перечисляем все нужные значения:  
 	  ```
-	  SELECT 'column_1' FROM 'table_name' WHERE 'column_2' IN ('value_1', 'value_2');
+	  SELECT 'column_1' FROM 'table_name' 
+	  WHERE 'column_2' IN ('value_1', 'value_2');
 	  ```  
 
 	- Условия равенства для значения NULL  
 	    
 	  > IS NULL для проверки на пустое значение  
 	  ```
-	  SELECT 'column_1', 'column_2' FROM 'table_name' WHERE 'column_2' IS NULL;
+	  SELECT 'column_1', 'column_2' FROM 'table_name' 
+	  WHERE 'column_2' IS NULL;
 	  ```  
 
 	  > IS NOT NULL для проверки на непустое значение  
 	  ```
-	  SELECT 'column_1', 'column_2' FROM 'table_name' WHERE 'column_2' IS NOT NULL;
+	  SELECT 'column_1', 'column_2' FROM 'table_name' 
+	  WHERE 'column_2' IS NOT NULL;
 	  ```  
 
 	- Арифметические операции  
@@ -212,10 +217,12 @@
 
 	- Поиск значений MAX и MIN  
 	  ```
-	  SELECT 'column_1', MAX ('column_2') AS 'max_column_2' FROM 'table_name'  GROUP BY 'column_1';
+	  SELECT 'column_1', MAX ('column_2') AS 'max_column_2' 
+	  FROM 'table_name'  GROUP BY 'column_1';
 	  ```  
 	  ```
-	  SELECT 'column_1', MIN ('column_2') AS 'max_column_2' FROM 'table_name'  GROUP BY 'column_1';
+	  SELECT 'column_1', MIN ('column_2') AS 'max_column_2' 
+	  FROM 'table_name'  GROUP BY 'column_1';
 	  ```  
 	- Получение суммы  
 	    
@@ -241,11 +248,13 @@
 	  ```  
 	- Вложенные запросы в части FROM  
 	  ```
-	  SELECT 'Столбец 1', 'Столбец 2', 'Столбец n' FROM ('Вложенный запрос') WHERE ['Условие'];
+	  SELECT 'Столбец 1', 'Столбец 2', 'Столбец n' 
+	  FROM ('Вложенный запрос') WHERE ['Условие'];
 	  ```  
 	- Вложенные запросы в части WHERE  
 	  ```
-	  SELECT 'Столбец 1', 'Столбец 2', 'Столбец n' FROM 'Имя таблицы' WHERE ('Вложенный запрос');
+	  SELECT 'Столбец 1', 'Столбец 2', 'Столбец n' 
+	  FROM 'Имя таблицы' WHERE ('Вложенный запрос');
 	  ```  
 	- Объединение данных через UNION  
 	    
